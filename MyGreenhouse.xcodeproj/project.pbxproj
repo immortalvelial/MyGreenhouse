@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11EEB4BC273C4DD90050ACC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EEB4BB273C4DD90050ACC1 /* AppDelegate.swift */; };
-		11EEB4BE273C4DD90050ACC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EEB4BD273C4DD90050ACC1 /* SceneDelegate.swift */; };
 		11EEB4C0273C4DD90050ACC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EEB4BF273C4DD90050ACC1 /* ViewController.swift */; };
-		11EEB4C3273C4DD90050ACC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EEB4C1273C4DD90050ACC1 /* Main.storyboard */; };
 		11EEB4C5273C4DDB0050ACC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EEB4C4273C4DDB0050ACC1 /* Assets.xcassets */; };
 		11EEB4C8273C4DDB0050ACC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EEB4C6273C4DDB0050ACC1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		11EEB4B8273C4DD90050ACC1 /* MyGreenhouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGreenhouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EEB4BB273C4DD90050ACC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11EEB4BD273C4DD90050ACC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		11EEB4BF273C4DD90050ACC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		11EEB4C2273C4DD90050ACC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11EEB4C4273C4DDB0050ACC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11EEB4C7273C4DDB0050ACC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11EEB4C9273C4DDB0050ACC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				11EEB4BB273C4DD90050ACC1 /* AppDelegate.swift */,
-				11EEB4BD273C4DD90050ACC1 /* SceneDelegate.swift */,
 				11EEB4BF273C4DD90050ACC1 /* ViewController.swift */,
-				11EEB4C1273C4DD90050ACC1 /* Main.storyboard */,
 				11EEB4C4273C4DDB0050ACC1 /* Assets.xcassets */,
 				11EEB4C6273C4DDB0050ACC1 /* LaunchScreen.storyboard */,
 				11EEB4C9273C4DDB0050ACC1 /* Info.plist */,
@@ -127,7 +121,6 @@
 			files = (
 				11EEB4C8273C4DDB0050ACC1 /* LaunchScreen.storyboard in Resources */,
 				11EEB4C5273C4DDB0050ACC1 /* Assets.xcassets in Resources */,
-				11EEB4C3273C4DD90050ACC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +133,12 @@
 			files = (
 				11EEB4C0273C4DD90050ACC1 /* ViewController.swift in Sources */,
 				11EEB4BC273C4DD90050ACC1 /* AppDelegate.swift in Sources */,
-				11EEB4BE273C4DD90050ACC1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		11EEB4C1273C4DD90050ACC1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11EEB4C2273C4DD90050ACC1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		11EEB4C6273C4DDB0050ACC1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +278,7 @@
 				INFOPLIST_FILE = MyGreenhouse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +290,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,7 +306,7 @@
 				INFOPLIST_FILE = MyGreenhouse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +318,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
