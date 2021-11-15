@@ -8,12 +8,8 @@
 import Foundation
 
 class PlacesViewModel: PlacesViewModelProtocol {
-    
-    var reuseIdentifier: String {
-        "cell"
-    }
-    
+
     func getNumberOfItems() -> Int {
-        2
+        20
     }
 }

@@ -8,7 +8,5 @@
 import Foundation
 
 protocol PlacesViewModelProtocol {
-    var reuseIdentifier: String { get }
-    
     func getNumberOfItems() -> Int
 }
