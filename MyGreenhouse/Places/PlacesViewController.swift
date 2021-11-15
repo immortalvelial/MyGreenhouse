@@ -22,11 +22,12 @@ class PlacesViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Places & Rooms"
         
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
-        
+        setupCollectionView()
+    }
+    
+    private func setupCollectionView() {
         collectionView = UICollectionView(frame: .zero,
-                                          collectionViewLayout: layout)
+                                          collectionViewLayout: UICollectionViewFlowLayout())
         guard let collectionView = collectionView else {
             return
         }
