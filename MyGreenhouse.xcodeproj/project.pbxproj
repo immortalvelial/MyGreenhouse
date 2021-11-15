@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1100B4C22742F99A00096712 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100B4C12742F99A00096712 /* PlacesViewController.swift */; };
+		1100B4C42742FAF700096712 /* PlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100B4C32742FAF700096712 /* PlacesViewModel.swift */; };
+		1100B4C62742FB1D00096712 /* PlacesViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100B4C52742FB1D00096712 /* PlacesViewModelProtocol.swift */; };
+		1100B4CA2742FD0400096712 /* PlacesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100B4C92742FD0400096712 /* PlacesCollectionViewCell.swift */; };
 		118EE549273DA5640070FB56 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE548273DA5640070FB56 /* TabBarViewController.swift */; };
 		118EE552273DA6CA0070FB56 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE551273DA6CA0070FB56 /* SettingsViewController.swift */; };
-		118EE554273DA7110070FB56 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE553273DA7110070FB56 /* PlacesViewController.swift */; };
 		118EE556273DA7E80070FB56 /* PlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE555273DA7E80070FB56 /* PlantsViewController.swift */; };
 		11EEB4BC273C4DD90050ACC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EEB4BB273C4DD90050ACC1 /* AppDelegate.swift */; };
 		11EEB4C5273C4DDB0050ACC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EEB4C4273C4DDB0050ACC1 /* Assets.xcassets */; };
@@ -17,9 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1100B4C12742F99A00096712 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		1100B4C32742FAF700096712 /* PlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewModel.swift; sourceTree = "<group>"; };
+		1100B4C52742FB1D00096712 /* PlacesViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewModelProtocol.swift; sourceTree = "<group>"; };
+		1100B4C92742FD0400096712 /* PlacesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCollectionViewCell.swift; sourceTree = "<group>"; };
 		118EE548273DA5640070FB56 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		118EE551273DA6CA0070FB56 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		118EE553273DA7110070FB56 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		118EE555273DA7E80070FB56 /* PlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewController.swift; sourceTree = "<group>"; };
 		11EEB4B8273C4DD90050ACC1 /* MyGreenhouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGreenhouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EEB4BB273C4DD90050ACC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1100B4C72742FCBF00096712 /* PlacesCell */ = {
+			isa = PBXGroup;
+			children = (
+				1100B4C92742FD0400096712 /* PlacesCollectionViewCell.swift */,
+			);
+			path = PlacesCell;
+			sourceTree = "<group>";
+		};
 		118EE54A273DA5BD0070FB56 /* Support files */ = {
 			isa = PBXGroup;
 			children = (
@@ -58,24 +72,13 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		118EE54C273DA5F10070FB56 /* Registration */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Registration;
-			sourceTree = "<group>";
-		};
-		118EE54D273DA6130070FB56 /* Authorization */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Authorization;
-			sourceTree = "<group>";
-		};
 		118EE54E273DA6390070FB56 /* Places */ = {
 			isa = PBXGroup;
 			children = (
-				118EE553273DA7110070FB56 /* PlacesViewController.swift */,
+				1100B4C72742FCBF00096712 /* PlacesCell */,
+				1100B4C12742F99A00096712 /* PlacesViewController.swift */,
+				1100B4C32742FAF700096712 /* PlacesViewModel.swift */,
+				1100B4C52742FB1D00096712 /* PlacesViewModelProtocol.swift */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -115,8 +118,6 @@
 		11EEB4BA273C4DD90050ACC1 /* MyGreenhouse */ = {
 			isa = PBXGroup;
 			children = (
-				118EE54D273DA6130070FB56 /* Authorization */,
-				118EE54C273DA5F10070FB56 /* Registration */,
 				118EE54E273DA6390070FB56 /* Places */,
 				118EE550273DA6610070FB56 /* Plants */,
 				118EE54F273DA65A0070FB56 /* Settings */,
@@ -196,10 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1100B4CA2742FD0400096712 /* PlacesCollectionViewCell.swift in Sources */,
+				1100B4C42742FAF700096712 /* PlacesViewModel.swift in Sources */,
+				1100B4C62742FB1D00096712 /* PlacesViewModelProtocol.swift in Sources */,
 				118EE549273DA5640070FB56 /* TabBarViewController.swift in Sources */,
 				118EE556273DA7E80070FB56 /* PlantsViewController.swift in Sources */,
-				118EE554273DA7110070FB56 /* PlacesViewController.swift in Sources */,
 				11EEB4BC273C4DD90050ACC1 /* AppDelegate.swift in Sources */,
+				1100B4C22742F99A00096712 /* PlacesViewController.swift in Sources */,
 				118EE552273DA6CA0070FB56 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
