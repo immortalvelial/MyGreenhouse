@@ -10,6 +10,6 @@ import Foundation
 class PlacesViewModel: PlacesViewModelProtocol {
 
     func getNumberOfItems() -> Int {
-        20
+        10
     }
 }

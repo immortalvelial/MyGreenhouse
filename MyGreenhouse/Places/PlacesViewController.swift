@@ -13,6 +13,8 @@ class PlacesViewController: UIViewController {
     
     private var collectionView: UICollectionView?
     
+    private let spacing: CGFloat = 10
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = PlacesViewModel()
@@ -61,7 +63,7 @@ extension PlacesViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let itemsPerRow: CGFloat = 2 // Ячеек в один ряд.
-        let paddingWidth = 20 * (itemsPerRow + 1) // Кол. отступов будет зависить от кол. ячеек.
+        let paddingWidth = spacing * (itemsPerRow + 1) // Кол. отступов будет зависить от кол. ячеек.
         let availableWidth = collectionView.frame.width - paddingWidth // Получаем доступную ширину за вычетом отступов.
         let widthPerItem = availableWidth / itemsPerRow // получаем точную доступную ширину для ячейки
         
@@ -69,14 +71,14 @@ extension PlacesViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        20
+        spacing
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        20
+        spacing
     }
 }
