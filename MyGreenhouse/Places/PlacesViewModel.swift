@@ -20,4 +20,9 @@ class PlacesViewModel: PlacesViewModelProtocol {
     func getNumberOfItems(_ section: Int) -> Int {
         places[section].rooms.count
     }
+    
+    func getCellViewModel(at indexPath: IndexPath) -> PlacesCellViewModelProtocol {
+        let room = places[indexPath.section].rooms[indexPath.item]
+        return PlacesCellViewModel(room: room)
+    }
 }

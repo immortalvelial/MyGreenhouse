@@ -12,4 +12,6 @@ protocol PlacesViewModelProtocol {
     
     func getNumberOfSections() -> Int
     func getNumberOfItems(_ section: Int) -> Int
+    
+    func getCellViewModel(at indexPath: IndexPath) -> PlacesCellViewModelProtocol
 }

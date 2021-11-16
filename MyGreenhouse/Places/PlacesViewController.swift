@@ -54,7 +54,7 @@ extension PlacesViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PlacesCollectionViewCell.identifier, for: indexPath) as! PlacesCollectionViewCell
-        
+        cell.viewModel = viewModel.getCellViewModel(at: indexPath)
         return cell
     }
 }
