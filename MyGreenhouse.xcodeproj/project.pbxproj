@@ -18,6 +18,8 @@
 		11A249672744266F00073ADD /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A249662744266F00073ADD /* Room.swift */; };
 		11A249692744268800073ADD /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A249682744268800073ADD /* Plant.swift */; };
 		11A2496C2744284000073ADD /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2496B2744284000073ADD /* StorageManager.swift */; };
+		11C1E207274434D6005D9C6C /* PlacesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C1E206274434D6005D9C6C /* PlacesCellViewModel.swift */; };
+		11C1E209274434DE005D9C6C /* PlacesCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C1E208274434DE005D9C6C /* PlacesCellViewModelProtocol.swift */; };
 		11EEB4BC273C4DD90050ACC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EEB4BB273C4DD90050ACC1 /* AppDelegate.swift */; };
 		11EEB4C5273C4DDB0050ACC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EEB4C4273C4DDB0050ACC1 /* Assets.xcassets */; };
 		11EEB4C8273C4DDB0050ACC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EEB4C6273C4DDB0050ACC1 /* LaunchScreen.storyboard */; };
@@ -37,6 +39,8 @@
 		11A249662744266F00073ADD /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		11A249682744268800073ADD /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		11A2496B2744284000073ADD /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		11C1E206274434D6005D9C6C /* PlacesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCellViewModel.swift; sourceTree = "<group>"; };
+		11C1E208274434DE005D9C6C /* PlacesCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCellViewModelProtocol.swift; sourceTree = "<group>"; };
 		11EEB4B8273C4DD90050ACC1 /* MyGreenhouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGreenhouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EEB4BB273C4DD90050ACC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EEB4C4273C4DDB0050ACC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				1100B4C92742FD0400096712 /* PlacesCollectionViewCell.swift */,
+				11C1E206274434D6005D9C6C /* PlacesCellViewModel.swift */,
+				11C1E208274434DE005D9C6C /* PlacesCellViewModelProtocol.swift */,
 			);
 			path = PlacesCell;
 			sourceTree = "<group>";
@@ -293,7 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C1E207274434D6005D9C6C /* PlacesCellViewModel.swift in Sources */,
 				1100B4CA2742FD0400096712 /* PlacesCollectionViewCell.swift in Sources */,
+				11C1E209274434DE005D9C6C /* PlacesCellViewModelProtocol.swift in Sources */,
 				1100B4C42742FAF700096712 /* PlacesViewModel.swift in Sources */,
 				1100B4C62742FB1D00096712 /* PlacesViewModelProtocol.swift in Sources */,
 				11A2496C2744284000073ADD /* StorageManager.swift in Sources */,
