@@ -13,7 +13,7 @@ class PlacesCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.backgroundColor = .lightGray
+        contentView.backgroundColor = .secondarySystemBackground
         contentView.layer.cornerRadius = 10
     }
     

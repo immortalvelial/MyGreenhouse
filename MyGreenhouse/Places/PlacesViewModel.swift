@@ -8,8 +8,12 @@
 import Foundation
 
 class PlacesViewModel: PlacesViewModelProtocol {
-
+    
+    var places: [Place] {
+        StorageManager.shared.fetchPlaces()
+    }
+    
     func getNumberOfItems() -> Int {
-        10
+        places.count
     }
 }

@@ -28,9 +28,7 @@ class PlacesViewController: UIViewController {
     private func setupCollectionView() {
         collectionView = UICollectionView(frame: .zero,
                                           collectionViewLayout: UICollectionViewFlowLayout())
-        guard let collectionView = collectionView else {
-            return
-        }
+        guard let collectionView = collectionView else { return }
         
         collectionView.register(PlacesCollectionViewCell.self,
                                 forCellWithReuseIdentifier: PlacesCollectionViewCell.identifier)
