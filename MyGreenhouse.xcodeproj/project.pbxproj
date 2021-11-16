@@ -14,12 +14,17 @@
 		118EE549273DA5640070FB56 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE548273DA5640070FB56 /* TabBarViewController.swift */; };
 		118EE552273DA6CA0070FB56 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE551273DA6CA0070FB56 /* SettingsViewController.swift */; };
 		118EE556273DA7E80070FB56 /* PlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE555273DA7E80070FB56 /* PlantsViewController.swift */; };
+		11A249652744242800073ADD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A249642744242800073ADD /* Place.swift */; };
+		11A249672744266F00073ADD /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A249662744266F00073ADD /* Room.swift */; };
+		11A249692744268800073ADD /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A249682744268800073ADD /* Plant.swift */; };
 		11EEB4BC273C4DD90050ACC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EEB4BB273C4DD90050ACC1 /* AppDelegate.swift */; };
 		11EEB4C5273C4DDB0050ACC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EEB4C4273C4DDB0050ACC1 /* Assets.xcassets */; };
 		11EEB4C8273C4DDB0050ACC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EEB4C6273C4DDB0050ACC1 /* LaunchScreen.storyboard */; };
+		EC8705BA2CEB6B6DB1D41C54 /* Pods_MyGreenhouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43730C2733DCA088F99C2D09 /* Pods_MyGreenhouse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A43D1B57F2828F463B1CD4B /* Pods-MyGreenhouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyGreenhouse.release.xcconfig"; path = "Target Support Files/Pods-MyGreenhouse/Pods-MyGreenhouse.release.xcconfig"; sourceTree = "<group>"; };
 		1100B4C12742F99A00096712 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		1100B4C32742FAF700096712 /* PlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewModel.swift; sourceTree = "<group>"; };
 		1100B4C52742FB1D00096712 /* PlacesViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -27,11 +32,16 @@
 		118EE548273DA5640070FB56 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		118EE551273DA6CA0070FB56 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		118EE555273DA7E80070FB56 /* PlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewController.swift; sourceTree = "<group>"; };
+		11A249642744242800073ADD /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		11A249662744266F00073ADD /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		11A249682744268800073ADD /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		11EEB4B8273C4DD90050ACC1 /* MyGreenhouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGreenhouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EEB4BB273C4DD90050ACC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EEB4C4273C4DDB0050ACC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11EEB4C7273C4DDB0050ACC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11EEB4C9273C4DDB0050ACC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43730C2733DCA088F99C2D09 /* Pods_MyGreenhouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyGreenhouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		935B30CC372810F59941C3FD /* Pods-MyGreenhouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyGreenhouse.debug.xcconfig"; path = "Target Support Files/Pods-MyGreenhouse/Pods-MyGreenhouse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8705BA2CEB6B6DB1D41C54 /* Pods_MyGreenhouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,11 +110,23 @@
 			path = Plants;
 			sourceTree = "<group>";
 		};
+		11A249632744240B00073ADD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11A249642744242800073ADD /* Place.swift */,
+				11A249662744266F00073ADD /* Room.swift */,
+				11A249682744268800073ADD /* Plant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		11EEB4AF273C4DD90050ACC1 = {
 			isa = PBXGroup;
 			children = (
 				11EEB4BA273C4DD90050ACC1 /* MyGreenhouse */,
 				11EEB4B9273C4DD90050ACC1 /* Products */,
+				5A07452F81BC3F2590BD40C7 /* Pods */,
+				490C2291D38269C0CA40E1A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,9 +145,27 @@
 				118EE550273DA6610070FB56 /* Plants */,
 				118EE54F273DA65A0070FB56 /* Settings */,
 				118EE54A273DA5BD0070FB56 /* Support files */,
+				11A249632744240B00073ADD /* Models */,
 				118EE54B273DA5CC0070FB56 /* Storyboards */,
 			);
 			path = MyGreenhouse;
+			sourceTree = "<group>";
+		};
+		490C2291D38269C0CA40E1A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43730C2733DCA088F99C2D09 /* Pods_MyGreenhouse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A07452F81BC3F2590BD40C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				935B30CC372810F59941C3FD /* Pods-MyGreenhouse.debug.xcconfig */,
+				0A43D1B57F2828F463B1CD4B /* Pods-MyGreenhouse.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11EEB4CC273C4DDB0050ACC1 /* Build configuration list for PBXNativeTarget "MyGreenhouse" */;
 			buildPhases = (
+				5261FD91F53B6783436BA768 /* [CP] Check Pods Manifest.lock */,
 				11EEB4B4273C4DD90050ACC1 /* Sources */,
 				11EEB4B5273C4DD90050ACC1 /* Frameworks */,
 				11EEB4B6273C4DD90050ACC1 /* Resources */,
+				A08B9D75E36503D7EFA26AC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +235,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5261FD91F53B6783436BA768 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyGreenhouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A08B9D75E36503D7EFA26AC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyGreenhouse/Pods-MyGreenhouse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyGreenhouse/Pods-MyGreenhouse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyGreenhouse/Pods-MyGreenhouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11EEB4B4273C4DD90050ACC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -200,9 +285,12 @@
 				1100B4CA2742FD0400096712 /* PlacesCollectionViewCell.swift in Sources */,
 				1100B4C42742FAF700096712 /* PlacesViewModel.swift in Sources */,
 				1100B4C62742FB1D00096712 /* PlacesViewModelProtocol.swift in Sources */,
+				11A249692744268800073ADD /* Plant.swift in Sources */,
 				118EE549273DA5640070FB56 /* TabBarViewController.swift in Sources */,
+				11A249672744266F00073ADD /* Room.swift in Sources */,
 				118EE556273DA7E80070FB56 /* PlantsViewController.swift in Sources */,
 				11EEB4BC273C4DD90050ACC1 /* AppDelegate.swift in Sources */,
+				11A249652744242800073ADD /* Place.swift in Sources */,
 				1100B4C22742F99A00096712 /* PlacesViewController.swift in Sources */,
 				118EE552273DA6CA0070FB56 /* SettingsViewController.swift in Sources */,
 			);
@@ -340,6 +428,7 @@
 		};
 		11EEB4CD273C4DDB0050ACC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 935B30CC372810F59941C3FD /* Pods-MyGreenhouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -368,6 +457,7 @@
 		};
 		11EEB4CE273C4DDB0050ACC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A43D1B57F2828F463B1CD4B /* Pods-MyGreenhouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
