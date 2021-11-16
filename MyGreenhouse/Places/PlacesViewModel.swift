@@ -13,7 +13,11 @@ class PlacesViewModel: PlacesViewModelProtocol {
         StorageManager.shared.fetchPlaces()
     }
     
-    func getNumberOfItems() -> Int {
+    func getNumberOfSections() -> Int {
         places.count
+    }
+    
+    func getNumberOfItems(_ section: Int) -> Int {
+        places[section].rooms.count
     }
 }

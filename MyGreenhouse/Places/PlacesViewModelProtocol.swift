@@ -9,5 +9,7 @@ import Foundation
 
 protocol PlacesViewModelProtocol {
     var places: [Place] { get }
-    func getNumberOfItems() -> Int
+    
+    func getNumberOfSections() -> Int
+    func getNumberOfItems(_ section: Int) -> Int
 }

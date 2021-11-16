@@ -16,7 +16,7 @@ class StorageManager {
     private init() {}
     
     func changeSchemaVersion() {
-        let schemaVersion: UInt64 = 1
+        let schemaVersion: UInt64 = 0
         
         let config = Realm.Configuration(
             schemaVersion: schemaVersion,

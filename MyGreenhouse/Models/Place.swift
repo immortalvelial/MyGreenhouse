@@ -9,9 +9,9 @@ import RealmSwift
 import Foundation
 
 class Place: Object {
-    @objc dynamic let id = UUID().uuidString
-    @objc dynamic let name = ""
-    @objc dynamic let image: UIImage? = nil
+    @objc dynamic var id = UUID().uuidString
+    @objc dynamic var name = ""
+    @objc dynamic var image: Data? = nil
     let rooms = List<Room>()
 }
 
