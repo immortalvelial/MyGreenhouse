@@ -14,4 +14,3 @@ class Place: Object {
     @objc dynamic var image: Data? = nil
     let rooms = List<Room>()
 }
-

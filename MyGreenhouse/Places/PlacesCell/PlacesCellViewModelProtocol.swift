@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import UIKit
 
 protocol PlacesCellViewModelProtocol {
     var name: String { get }
+    var image: Data? { get }
     
     init(room: Room)
 }

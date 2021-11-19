@@ -13,6 +13,10 @@ class PlacesCellViewModel: PlacesCellViewModelProtocol {
         room.name
     }
     
+    var image: Data? {
+        room.image
+    }
+    
     private let room: Room
     
     required init(room: Room) {

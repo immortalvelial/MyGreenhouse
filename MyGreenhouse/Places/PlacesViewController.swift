@@ -24,7 +24,7 @@ class PlacesViewController: UIViewController {
         
         setupCollectionView()
     }
-    
+
     private func setupCollectionView() {
         collectionView = UICollectionView(frame: .zero,
                                           collectionViewLayout: UICollectionViewFlowLayout())
