@@ -9,18 +9,6 @@ import UIKit
 
 class PlacesCollectionViewCell: UICollectionViewCell {
     
-    static let identifier = "cell"
-    
-    var viewModel: PlacesCellViewModelProtocol! {
-        didSet {
-            let imageTest = UIImage(named: "problem")
-            guard let data = imageTest?.pngData() else { return }
-            
-            nameLabel.text = viewModel.name
-            roomImage.image = UIImage(data: viewModel.image ?? data)
-        }
-    }
-    
     lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.textColor = .blue
@@ -32,6 +20,18 @@ class PlacesCollectionViewCell: UICollectionViewCell {
         image.contentMode = .scaleAspectFit
         return image
     }()
+    
+    static let identifier = "cell"
+    
+    var viewModel: PlacesCellViewModelProtocol! {
+        didSet {
+            let imageTest = UIImage(named: "problem")
+            guard let data = imageTest?.pngData() else { return }
+            
+            nameLabel.text = viewModel.name
+            roomImage.image = UIImage(data: viewModel.image ?? data)
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
