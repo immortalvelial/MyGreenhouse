@@ -20,21 +20,25 @@ class PlacesCollectionViewCell: UICollectionViewCell {
         image.contentMode = .scaleAspectFit
         return image
     }()
-    
+
     static let identifier = "cell"
     
     var viewModel: PlacesCellViewModelProtocol! {
         didSet {
-            let imageTest = UIImage(named: "problem")
-            guard let data = imageTest?.pngData() else { return }
-            
-            nameLabel.text = viewModel.name
-            roomImage.image = UIImage(data: viewModel.image ?? data)
+            setupCell()
         }
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setup()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setup() {
         contentView.backgroundColor = .secondarySystemBackground
         contentView.layer.cornerRadius = 10
         
@@ -45,18 +49,23 @@ class PlacesCollectionViewCell: UICollectionViewCell {
         roomImage.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            roomImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-            roomImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-            roomImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
-            roomImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20),
+            roomImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+            roomImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            roomImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor,
+                                                constant: -(contentView.frame.size.width / 3)),
+            roomImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor,
+                                              constant: -(contentView.frame.size.height / 3)),
             
-            nameLabel.topAnchor.constraint(equalTo: roomImage.bottomAnchor, constant: 0),
-            nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 5),
-            nameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5)
+            nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+            nameLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)
         ])
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    private func setupCell() {
+        let imageTest = UIImage(named: "problem")
+        guard let data = imageTest?.pngData() else { return }
+        
+        nameLabel.text = viewModel.name
+        roomImage.image = UIImage(data: viewModel.image ?? data)
     }
 }
