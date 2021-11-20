@@ -19,7 +19,7 @@ class PlacesHeaderCollectionReusableView: UICollectionReusableView {
     lazy var placeImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(systemName: "house")
+        imageView.image = UIImage(systemName: "house.fill")
         return imageView
     }()
     
@@ -30,6 +30,12 @@ class PlacesHeaderCollectionReusableView: UICollectionReusableView {
         stackView.addArrangedSubview(placeImage)
         stackView.addArrangedSubview(nameOfPlaceLabel)
         return stackView
+    }()
+    
+    lazy var editButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(systemName: "rectangle.and.pencil.and.ellipsis"), for: .normal)
+        return button
     }()
     
     static let identifier = "header"
@@ -51,11 +57,15 @@ class PlacesHeaderCollectionReusableView: UICollectionReusableView {
     
     private func setup() {
         addSubview(nameOfPlaceStackView)
+        addSubview(editButton)
         
         nameOfPlaceStackView.translatesAutoresizingMaskIntoConstraints = false
+        editButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            nameOfPlaceStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10)
+            nameOfPlaceStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+//            editButton.leadingAnchor.constraint(equalTo: nameOfPlaceStackView.trailingAnchor, constant: 0),
+            editButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)
         ])
     }
 }

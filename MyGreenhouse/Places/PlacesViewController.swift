@@ -13,7 +13,7 @@ class PlacesViewController: UIViewController {
     
     private var collectionView: UICollectionView?
     
-    private let spacing: CGFloat = 10
+    private let spacing: CGFloat = 20
     
     override func viewDidLoad() {
         super.viewDidLoad()
