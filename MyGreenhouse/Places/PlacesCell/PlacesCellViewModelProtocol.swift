@@ -11,6 +11,7 @@ import UIKit
 protocol PlacesCellViewModelProtocol {
     var name: String { get }
     var image: Data? { get }
+    var numberOfPlants: String { get }
     
     init(room: Room)
 }

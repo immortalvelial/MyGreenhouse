@@ -17,9 +17,20 @@ class PlacesCellViewModel: PlacesCellViewModelProtocol {
         room.image
     }
     
+    var numberOfPlants: String {
+        getNumberOfPlants()
+    }
+    
     private let room: Room
     
     required init(room: Room) {
         self.room = room
+    }
+    
+    private func getNumberOfPlants() -> String {
+        switch room.plants.count {
+        case 0: return "У вас еще нет растений."
+        default: return "Растений: \(room.plants.count)"
+        }
     }
 }

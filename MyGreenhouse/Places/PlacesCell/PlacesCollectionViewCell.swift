@@ -11,7 +11,13 @@ class PlacesCollectionViewCell: UICollectionViewCell {
     
     lazy var nameLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .blue
+        label.font = .boldSystemFont(ofSize: 15)
+        return label
+    }()
+    
+    lazy var numberOfPlantsLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 10)
         return label
     }()
     
@@ -26,6 +32,15 @@ class PlacesCollectionViewCell: UICollectionViewCell {
         button.setImage(UIImage(systemName: "pencil"), for: .normal)
         button.tintColor = .systemGreen
         return button
+    }()
+    
+    lazy var labelStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.spacing = 5
+        stackView.addArrangedSubview(nameLabel)
+        stackView.addArrangedSubview(numberOfPlantsLabel)
+        return stackView
     }()
 
     static let identifier = "cell"
@@ -49,11 +64,11 @@ class PlacesCollectionViewCell: UICollectionViewCell {
         contentView.backgroundColor = .white
         contentView.layer.cornerRadius = 10
         
-        contentView.addSubview(nameLabel)
+        contentView.addSubview(labelStackView)
         contentView.addSubview(roomImage)
         contentView.addSubview(editButton)
         
-        nameLabel.translatesAutoresizingMaskIntoConstraints = false
+        labelStackView.translatesAutoresizingMaskIntoConstraints = false
         roomImage.translatesAutoresizingMaskIntoConstraints = false
         editButton.translatesAutoresizingMaskIntoConstraints = false
         
@@ -68,8 +83,8 @@ class PlacesCollectionViewCell: UICollectionViewCell {
             editButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
             editButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
             
-            nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            nameLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)
+            labelStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+            labelStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10)
         ])
     }
     
@@ -79,5 +94,6 @@ class PlacesCollectionViewCell: UICollectionViewCell {
         
         nameLabel.text = viewModel.name
         roomImage.image = UIImage(data: viewModel.image ?? data)
+        numberOfPlantsLabel.text = viewModel.numberOfPlants
     }
 }
