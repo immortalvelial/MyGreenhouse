@@ -36,6 +36,8 @@ class PlacesViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         
+        collectionView.backgroundColor = .secondarySystemBackground
+        
         view.addSubview(collectionView)
         
         collectionView.frame = view.bounds

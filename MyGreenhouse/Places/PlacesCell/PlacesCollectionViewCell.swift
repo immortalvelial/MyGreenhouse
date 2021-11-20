@@ -39,7 +39,7 @@ class PlacesCollectionViewCell: UICollectionViewCell {
     }
     
     private func setup() {
-        contentView.backgroundColor = .secondarySystemBackground
+        contentView.backgroundColor = .white
         contentView.layer.cornerRadius = 10
         
         contentView.addSubview(nameLabel)
@@ -52,9 +52,9 @@ class PlacesCollectionViewCell: UICollectionViewCell {
             roomImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
             roomImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
             roomImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor,
-                                                constant: -(contentView.frame.size.width / 3)),
+                                                constant: -(contentView.frame.size.width / 2)),
             roomImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor,
-                                              constant: -(contentView.frame.size.height / 3)),
+                                              constant: -(contentView.frame.size.height / 2)),
             
             nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
             nameLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)
