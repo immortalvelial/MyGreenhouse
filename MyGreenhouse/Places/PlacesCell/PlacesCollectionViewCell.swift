@@ -30,7 +30,6 @@ class PlacesCollectionViewCell: UICollectionViewCell {
     lazy var editButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(systemName: "pencil"), for: .normal)
-        button.tintColor = .systemGreen
         return button
     }()
     
