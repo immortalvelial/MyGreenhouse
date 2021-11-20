@@ -29,7 +29,7 @@ class PlacesCellViewModel: PlacesCellViewModelProtocol {
     
     private func getNumberOfPlants() -> String {
         switch room.plants.count {
-        case 0: return "У вас еще нет растений."
+        case 0: return "Еще нет растений."
         default: return "Растений: \(room.plants.count)"
         }
     }
