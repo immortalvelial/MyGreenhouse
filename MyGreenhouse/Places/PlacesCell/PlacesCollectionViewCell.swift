@@ -20,6 +20,13 @@ class PlacesCollectionViewCell: UICollectionViewCell {
         image.contentMode = .scaleAspectFit
         return image
     }()
+    
+    lazy var editButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(systemName: "pencil"), for: .normal)
+        button.tintColor = .systemGreen
+        return button
+    }()
 
     static let identifier = "cell"
     
@@ -44,9 +51,11 @@ class PlacesCollectionViewCell: UICollectionViewCell {
         
         contentView.addSubview(nameLabel)
         contentView.addSubview(roomImage)
+        contentView.addSubview(editButton)
         
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         roomImage.translatesAutoresizingMaskIntoConstraints = false
+        editButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             roomImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
@@ -55,6 +64,9 @@ class PlacesCollectionViewCell: UICollectionViewCell {
                                                 constant: -(contentView.frame.size.width / 2)),
             roomImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor,
                                               constant: -(contentView.frame.size.height / 2)),
+            
+            editButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            editButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
             
             nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
             nameLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)
