@@ -24,6 +24,20 @@ class PlacesViewController: UIViewController {
         
         setupCollectionView()
     }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader,
+                                                                     withReuseIdentifier: PlacesHeaderCollectionReusableView.identifier,
+                                                                     for: indexPath) as! PlacesHeaderCollectionReusableView
+        
+        header.viewModel = viewModel.getHeaderViewModel(at: indexPath)
+        
+        return header
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        CGSize(width: collectionView.frame.size.width, height: 20)
+    }
 
     private func setupCollectionView() {
         collectionView = UICollectionView(frame: .zero,
@@ -32,6 +46,10 @@ class PlacesViewController: UIViewController {
         
         collectionView.register(PlacesCollectionViewCell.self,
                                 forCellWithReuseIdentifier: PlacesCollectionViewCell.identifier)
+        
+        collectionView.register(PlacesHeaderCollectionReusableView.self,
+                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                                withReuseIdentifier: PlacesHeaderCollectionReusableView.identifier)
         
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -62,7 +80,7 @@ extension PlacesViewController: UICollectionViewDataSource {
 }
 
 extension PlacesViewController: UICollectionViewDelegate {
-    
+
 }
 
 extension PlacesViewController: UICollectionViewDelegateFlowLayout {

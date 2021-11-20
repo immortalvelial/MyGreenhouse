@@ -25,4 +25,9 @@ class PlacesViewModel: PlacesViewModelProtocol {
         let room = places[indexPath.section].rooms[indexPath.item]
         return PlacesCellViewModel(room: room)
     }
+    
+    func getHeaderViewModel(at indexPath: IndexPath) -> PlacesHeaderViewModelProtocol {
+        let place = places[indexPath.section]
+        return PlacesHeaderViewModel(place: place)
+    }
 }

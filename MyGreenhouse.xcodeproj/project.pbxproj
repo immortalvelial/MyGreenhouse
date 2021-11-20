@@ -11,6 +11,9 @@
 		1100B4C42742FAF700096712 /* PlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100B4C32742FAF700096712 /* PlacesViewModel.swift */; };
 		1100B4C62742FB1D00096712 /* PlacesViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100B4C52742FB1D00096712 /* PlacesViewModelProtocol.swift */; };
 		1100B4CA2742FD0400096712 /* PlacesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100B4C92742FD0400096712 /* PlacesCollectionViewCell.swift */; };
+		114F2275274929460008BCE9 /* PlacesHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114F2274274929460008BCE9 /* PlacesHeaderCollectionReusableView.swift */; };
+		114F227727492C290008BCE9 /* PlacesHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114F227627492C290008BCE9 /* PlacesHeaderViewModel.swift */; };
+		114F227927492C350008BCE9 /* PlacesHeaderViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114F227827492C350008BCE9 /* PlacesHeaderViewModelProtocol.swift */; };
 		118EE549273DA5640070FB56 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE548273DA5640070FB56 /* TabBarViewController.swift */; };
 		118EE552273DA6CA0070FB56 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE551273DA6CA0070FB56 /* SettingsViewController.swift */; };
 		118EE556273DA7E80070FB56 /* PlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE555273DA7E80070FB56 /* PlantsViewController.swift */; };
@@ -32,6 +35,9 @@
 		1100B4C32742FAF700096712 /* PlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewModel.swift; sourceTree = "<group>"; };
 		1100B4C52742FB1D00096712 /* PlacesViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewModelProtocol.swift; sourceTree = "<group>"; };
 		1100B4C92742FD0400096712 /* PlacesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCollectionViewCell.swift; sourceTree = "<group>"; };
+		114F2274274929460008BCE9 /* PlacesHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		114F227627492C290008BCE9 /* PlacesHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesHeaderViewModel.swift; sourceTree = "<group>"; };
+		114F227827492C350008BCE9 /* PlacesHeaderViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesHeaderViewModelProtocol.swift; sourceTree = "<group>"; };
 		118EE548273DA5640070FB56 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		118EE551273DA6CA0070FB56 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		118EE555273DA7E80070FB56 /* PlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +78,16 @@
 			path = PlacesCell;
 			sourceTree = "<group>";
 		};
+		114F2273274928EE0008BCE9 /* PlacesHeader */ = {
+			isa = PBXGroup;
+			children = (
+				114F2274274929460008BCE9 /* PlacesHeaderCollectionReusableView.swift */,
+				114F227627492C290008BCE9 /* PlacesHeaderViewModel.swift */,
+				114F227827492C350008BCE9 /* PlacesHeaderViewModelProtocol.swift */,
+			);
+			path = PlacesHeader;
+			sourceTree = "<group>";
+		};
 		118EE54A273DA5BD0070FB56 /* Support files */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				1100B4C72742FCBF00096712 /* PlacesCell */,
+				114F2273274928EE0008BCE9 /* PlacesHeader */,
 				1100B4C12742F99A00096712 /* PlacesViewController.swift */,
 				1100B4C32742FAF700096712 /* PlacesViewModel.swift */,
 				1100B4C52742FB1D00096712 /* PlacesViewModelProtocol.swift */,
@@ -302,12 +319,15 @@
 				11C1E207274434D6005D9C6C /* PlacesCellViewModel.swift in Sources */,
 				1100B4CA2742FD0400096712 /* PlacesCollectionViewCell.swift in Sources */,
 				11C1E209274434DE005D9C6C /* PlacesCellViewModelProtocol.swift in Sources */,
+				114F227727492C290008BCE9 /* PlacesHeaderViewModel.swift in Sources */,
 				1100B4C42742FAF700096712 /* PlacesViewModel.swift in Sources */,
+				114F2275274929460008BCE9 /* PlacesHeaderCollectionReusableView.swift in Sources */,
 				1100B4C62742FB1D00096712 /* PlacesViewModelProtocol.swift in Sources */,
 				11A2496C2744284000073ADD /* StorageManager.swift in Sources */,
 				11A249692744268800073ADD /* Plant.swift in Sources */,
 				118EE549273DA5640070FB56 /* TabBarViewController.swift in Sources */,
 				11A249672744266F00073ADD /* Room.swift in Sources */,
+				114F227927492C350008BCE9 /* PlacesHeaderViewModelProtocol.swift in Sources */,
 				118EE556273DA7E80070FB56 /* PlantsViewController.swift in Sources */,
 				11EEB4BC273C4DD90050ACC1 /* AppDelegate.swift in Sources */,
 				11A249652744242800073ADD /* Place.swift in Sources */,

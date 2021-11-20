@@ -14,4 +14,5 @@ protocol PlacesViewModelProtocol {
     func getNumberOfItems(_ section: Int) -> Int
     
     func getCellViewModel(at indexPath: IndexPath) -> PlacesCellViewModelProtocol
+    func getHeaderViewModel(at indexPath: IndexPath) -> PlacesHeaderViewModelProtocol
 }
